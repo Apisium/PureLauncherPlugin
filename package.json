@@ -1,0 +1,54 @@
+{
+  "name": "pure-launcher-plugin",
+  "version": "0.0.0",
+  "private": true,
+  "description": "A sample plugin of PureLauncher.",
+  "main": "index.js",
+  "scripts": {
+    "test": "yarn lint",
+    "lint": "eslint src/ --ext .js,.ts,.tsx",
+    "lint:fix": "eslint src/ --fix --ext .js,.ts,.tsx",
+    "start": "pl-plugin-dev",
+    "build": "pl-plugin-dev build",
+    "preinstall": "node -e \"if(!process.env.npm_execpath.endsWith('yarn.js')) throw new Error('\\033[1;31;1mYou must use Yarn to install, not NPM!\\n你必须使用 Yarn 来安装模块!\\033[0m')\""
+  },
+  "keywords": [
+    "PureLauncher",
+    "Minecraft",
+    "Plugin"
+  ],
+  "author": "Shirasawa",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@typescript-eslint/eslint-plugin": "^2.12.0",
+    "@typescript-eslint/parser": "^2.12.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "eslint": "^6.7.2",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": "^3.1.0",
+    "pure-launcher": "https://github.com/Apisium/PureLauncher.git",
+    "typescript": "^3.7.3"
+  },
+  "browserslist": [
+    "electron 6.1.6"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Apisium/PureLauncherPlugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Apisium/PureLauncherPlugin/issues"
+  },
+  "homepage": "https://github.com/Apisium/PureLauncherPlugin#readme"
+}

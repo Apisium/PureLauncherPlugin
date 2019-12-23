@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "jsx": "react",
+    "lib": ["webworker", "scripthost", "dom", "es2019"],
+    "baseUrl": ".",
+    "paths": {
+      "@plugin": ["./node_modules/pure-launcher/packages/plugin"]
+    }
+  },
+  "include": [
+    "src"
+  ]
+}
