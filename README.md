@@ -21,7 +21,7 @@ Then edit `src/index.ts`
 Windows:
 
 ```bash
-yarn
+npm install
 
 set DEV=true
 
@@ -31,7 +31,7 @@ PureLauncher.exe
 Linux:
 
 ```bash
-yarn
+npm install
 
 DEV=true PureLauncher
 ```
@@ -39,13 +39,13 @@ DEV=true PureLauncher
 ### Debugging
 
 ```bash
-yarn start
+npm start
 ```
 
 ### Build
 
 ```bash
-yarn build
+npm build
 ```
 
 ## Author
