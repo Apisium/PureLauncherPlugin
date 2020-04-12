@@ -12,7 +12,7 @@ Must be read before starting:
 - [Plugin Documentation](https://github.com/Apisium/PureLauncher/wiki/Plugins_Index)
 - [PureLuncher Documentation](https://github.com/Apisium/PureLauncher/wiki)
 
-Then edit `src/index.ts`
+Then just edit `src/index.ts`
 
 ## Commands
 
@@ -28,7 +28,7 @@ set DEV=true
 PureLauncher.exe
 ```
 
-Linux:
+Linux/MAC OS:
 
 ```bash
 npm install
@@ -45,7 +45,7 @@ npm start
 ### Build
 
 ```bash
-npm build
+npm run build
 ```
 
 ## Author

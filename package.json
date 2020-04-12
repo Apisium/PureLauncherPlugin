@@ -5,12 +5,11 @@
   "description": "A sample plugin of PureLauncher.",
   "main": "index.js",
   "scripts": {
-    "test": "yarn lint",
+    "test": "npm run lint",
     "lint": "eslint src/ --ext .js,.ts,.tsx",
     "lint:fix": "eslint src/ --fix --ext .js,.ts,.tsx",
     "start": "pl-plugin-dev",
-    "build": "pl-plugin-dev build",
-    "preinstall": "node -e \"if(!process.env.npm_execpath.endsWith('yarn.js')) throw new Error('\\033[1;31;1mYou must use Yarn to install, not NPM!\\n你必须使用 Yarn 来安装模块!\\033[0m')\""
+    "build": "pl-plugin-dev build"
   },
   "keywords": [
     "PureLauncher",
@@ -20,20 +19,20 @@
   "author": "Shirasawa",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.7.7",
-    "@typescript-eslint/eslint-plugin": "^2.12.0",
-    "@typescript-eslint/parser": "^2.12.0",
+    "@babel/core": "^7.9.0",
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/parser": "^2.27.0",
     "babel-plugin-module-resolver": "^4.0.0",
-    "eslint": "^6.7.2",
-    "eslint-config-standard": "^14.1.0",
-    "eslint-plugin-import": "^2.19.1",
-    "eslint-plugin-node": "^10.0.0",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-standard": "^4.0.1",
-    "husky": "^3.1.0",
+    "husky": "^4.2.5",
     "pure-launcher": "git+https://github.com/Apisium/PureLauncher.git",
-    "typescript": "^3.7.3"
+    "typescript": "^3.8.3"
   },
   "browserslist": [
     "electron 6.1.6"
@@ -45,10 +44,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Apisium/PureLauncherPlugin.git"
+    "url": "git+https://github.com/Apisium/PureLauncherPluginTemplate.git"
   },
   "bugs": {
-    "url": "https://github.com/Apisium/PureLauncherPlugin/issues"
+    "url": "https://github.com/Apisium/PureLauncherPluginTemplate/issues"
   },
-  "homepage": "https://github.com/Apisium/PureLauncherPlugin#readme"
+  "homepage": "https://github.com/Apisium/PureLauncherPluginTemplate#readme"
 }
